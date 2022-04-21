@@ -5,9 +5,11 @@ import java.util.zip.ZipInputStream;
 
 public class Main {
 
+    public static String path = "D:" + File.separator + "Games(netology)" + File.separator + "savegames" + File.separator;
+
     public static void main(String[] args) {
-        openZip("D:\\Games(netology)\\savegames\\save.zip","D:\\Games(netology)\\savegames");
-        System.out.println(openProgress("D:\\Games(netology)\\savegames\\packed_save1.dat"));
+        openZip(path + "save.zip",path);
+        System.out.println(openProgress(path + "packed_save1.dat"));
     }
 
     public static void openZip(String pathFrom, String pathTo) {
